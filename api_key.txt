@@ -1,0 +1,4 @@
+code ~/ .zshrc
+export GEMINI_API_KEY="AIzaSyD5a0JZw6XPU4xU8HmDzHciJII5VlOMcdY"
+source ~/.zshrc
+
