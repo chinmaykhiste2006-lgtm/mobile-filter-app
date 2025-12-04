@@ -2,6 +2,7 @@ const express = require("express");
 const mysql = require("mysql2/promise");
 const cors = require("cors");
 const fs = require("fs");
+const env = require('dotenv').config();
 // const fetch = require("node-fetch"); 
 
 const app = express();
@@ -9,10 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 const dbConfig = {
-  host: "localhost",
-  user: "root",
-  password: "chinmay_mysql_pass", 
-  database: "project",
+  host: process.env.host,
+  user: process.env.user,
+  password: process.env.password, 
+  database: process.env.database,
 };
 
 const PORT = 3001;
